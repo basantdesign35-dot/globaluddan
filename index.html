@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Uddan | Digital Marketing Agency for Real Estate Growth</title>
+  <meta name="description" content="India's leading digital marketing agency specialized in Real Estate. Generating qualified buyer leads, booking site visits, and scaling property sales through Meta Ads, Google Ads, SEO, and GEO." />
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#0F2042',
+            brandNavyDark: '#0A152D',
+            brandGold: '#C5A059',
+            brandGoldLight: '#E5C478',
+            brandBlue: '#1E40AF',
+            surfaceBg: '#FAFAFB',
+            borderLight: '#E8ECF2'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    body {
+      background-color: #FFFFFF;
+      color: #1E293B;
+      overflow-x: hidden;
+    }
+    .service-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(15, 32, 66, 0.08);
+      border-color: #C5A059;
+    }
+    .whatsapp-pulse {
+      animation: pulse-ring 2s infinite;
+    }
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-brandGold selection:text-white relative">
+
+  <!-- ================= TOP CONTACT BAR ================= -->
+  <div class="bg-brandNavyDark text-slate-300 text-[11px] xl:text-xs py-2 px-4 border-b border-white/10 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center font-medium whitespace-nowrap gap-4">
+      <div class="flex items-center space-x-4 lg:space-x-6 flex-shrink-0">
+        <a href="tel:+919818114438" class="hover:text-brandGold transition flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 fill-current text-brandGold" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 333.4 178.6 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+          <span>+91 9818114438</span>
+        </a>
+        <a href="mailto:globaluddan@gmail.com" class="hover:text-brandGold transition flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 fill-current text-brandGold" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+          <span>globaluddan@gmail.com</span>
+        </a>
+        <span class="text-slate-500">|</span>
+        <span class="flex items-center gap-1.5 text-white whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 fill-current text-brandGold" viewBox="0 0 512 512"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.6 2.9C246.8 1 251.4 0 256 0z"/></svg>
+          <span>GST Registered Agency • Google & Meta Certified Partner</span>
+        </span>
+      </div>
+      <div class="flex items-center space-x-3 flex-shrink-0 whitespace-nowrap">
+        <button onclick="openCalendarModal()" class="text-brandGold font-semibold hover:underline flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 448 512"><path d="M152 64H296V24C296 10.74 306.7 0 320 0C333.3 0 344 10.74 344 24V64H384C419.3 64 448 92.65 448 128V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V128C0 92.65 28.65 64 64 64H104V24C104 10.74 114.7 0 128 0C141.3 0 152 10.74 152 24V64zM400 192H48V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V192z"/></svg>
+          <span>Schedule 15-Min Strategy Call</span>
+        </button>
+        <span class="text-slate-500">•</span>
+        <a href="https://wa.me/919818114438?text=Hello%20Global%20Uddan%20Team,%20I%20want%20to%20scale%20my%20real%20estate%20business" target="_blank" class="text-emerald-400 font-semibold hover:underline flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.6 66.4 14 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2.5 flex-shrink-0">
+        <svg class="w-10 h-10 lg:w-11 lg:h-11 flex-shrink-0" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="260" cy="235" r="160" stroke="#C5A059" stroke-width="13" fill="none" stroke-linecap="round" stroke-dasharray="850 150"/>
+          <circle cx="372" cy="118" r="20" fill="#C5A059" />
+          <path d="M140 85 C230 145 285 240 320 280 C290 290 240 250 170 190 C135 155 130 115 140 85 Z" fill="#0F2042" />
+          <path d="M142 135 C220 185 260 250 285 285 C260 290 220 260 170 215 C145 190 138 155 142 135 Z" fill="#C5A059" />
+          <path d="M365 180 C345 185 330 195 320 210 C315 220 310 245 320 270 C290 320 230 340 185 320 C140 290 145 230 148 180 C138 230 140 310 205 348 C270 380 340 320 365 240 C370 215 385 195 410 185 C390 180 375 178 365 180 Z" fill="#0F2042" />
+        </svg>
+
+        <div class="flex flex-col">
+          <span class="font-display font-black text-lg lg:text-xl tracking-wide text-brandNavy whitespace-nowrap">GLOBAL <span class="text-brandNavy">UDDAN</span></span>
+          <span class="text-[7.5px] lg:text-[8px] tracking-[0.2em] text-brandGold font-bold uppercase -mt-1 whitespace-nowrap">REAL ESTATE DIGITAL MARKETING</span>
+        </div>
+      </a>
+
+      <!-- Compact Single-Line Nav Links (No ROI Calculator, No Language Button) -->
+      <nav class="hidden lg:flex items-center space-x-4 xl:space-x-6 text-[11px] xl:text-xs uppercase font-bold tracking-wider text-slate-700 whitespace-nowrap">
+        <a href="#geo-aeo" class="hover:text-brandGold transition py-2 text-emerald-700 font-extrabold flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 fill-current text-emerald-600 inline" viewBox="0 0 512 512"><path d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0s256 114.6 256 256zM256 128v128h128c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg>
+          <span>AI GEO/AEO</span>
+        </a>
+        <a href="#services" class="hover:text-brandGold transition py-2">Services & Roadmaps</a>
+        <a href="#competitor" class="hover:text-brandGold transition py-2">Competitor Audit</a>
+        <a href="#comparison" class="hover:text-brandGold transition py-2">Impact</a>
+        <a href="#team" class="hover:text-brandGold transition py-2">Leadership</a>
+        <a href="#location" class="hover:text-brandGold transition py-2">Office</a>
+      </nav>
+
+      <!-- Action CTA Button -->
+      <div class="flex items-center gap-2 lg:gap-3 flex-shrink-0">
+        <button onclick="openCalendarModal()" class="inline-flex items-center gap-1.5 bg-brandNavy hover:bg-brandGold text-white hover:text-brandNavy text-[11px] uppercase font-extrabold tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-all whitespace-nowrap">
+          <span>Book Call</span>
+          <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M152 64H296V24C296 10.74 306.7 0 320 0C333.3 0 344 10.74 344 24V64H384C419.3 64 448 92.65 448 128V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V128C0 92.65 28.65 64 64 64H104V24C104 10.74 114.7 0 128 0C141.3 0 152 10.74 152 24V64zM400 192H48V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V192z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= RISK-FREE STRIP ================= -->
+  <div class="bg-amber-50/80 border-b border-amber-200/60 py-2 px-4 text-center text-[11px] sm:text-xs font-semibold text-slate-700">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-2 sm:gap-6">
+      <span class="flex items-center gap-1.5 text-brandNavy"><svg class="w-3.5 h-3.5 fill-current text-brandGold inline" viewBox="0 0 448 512"><path d="M433.94 129.95l-83.92-37.41A48 48 0 0 0 320 64H128a48 48 0 0 0-30.02 28.54l-83.92 37.41A48 48 0 0 0 0 173.81V432a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V173.81a48 48 0 0 0-14.06-43.86zM224 128a32 32 0 1 1-32 32 32 32 0 0 1 32-32zM64 416V192l56-24v48a16 16 0 0 0 32 0v-48l72 30.86V256a16 16 0 0 0 32 0v-41.14L328 168v248z"/></svg> <strong>Zero Lock-in Contract:</strong> Performance Retainers</span>
+      <span class="hidden sm:inline text-slate-300">•</span>
+      <span class="flex items-center gap-1.5 text-brandNavy"><svg class="w-3.5 h-3.5 fill-current text-brandGold inline" viewBox="0 0 576 512"><path d="M575.8 255.5C575.8 273.5 560.8 287.5 542.8 287.5H416.8V415.5C416.8 433.5 401.8 448.5 383.8 448.5H191.8C173.8 448.5 158.8 433.5 158.8 415.5V287.5H32.79C14.79 287.5 -.21 272.5 -.21 254.5C-.21 236.5 14.79 221.5 32.79 221.5H158.8V93.51C158.8 75.51 173.8 60.51 191.8 60.51H383.8C401.8 60.51 416.8 75.51 416.8 93.51V221.5H542.8C560.8 221.5 575.8 236.5 575.8 255.5Z"/></svg> <strong>Real Estate Specialized:</strong> Builders, Luxury Floors & Channel Partners</span>
+      <span class="hidden md:inline text-slate-300">•</span>
+      <span class="hidden md:flex items-center gap-1.5 text-brandNavy"><svg class="w-3.5 h-3.5 fill-current text-brandGold inline" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 290.328 0 269.41 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.41-26.97 98.328-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg> <span>Dwarka Expressway Headquarters</span></span>
+    </div>
+  </div>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative bg-white py-10 lg:py-14 border-b border-slate-100 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+      
+      <!-- Left Hero Details -->
+      <div class="lg:col-span-7 space-y-4 lg:space-y-5">
+        <div class="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 px-3.5 py-1 rounded-full text-xs font-semibold text-slate-700 shadow-2xs">
+          <div class="flex text-amber-400 text-xs">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-slate-800 font-bold">4.9/5 Agency Rating</span>
+          <span class="text-slate-300">|</span>
+          <span class="text-slate-600">₹420Cr+ Property Inventory Marketed</span>
+        </div>
+
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-brandNavy leading-tight tracking-tight">
+          Digital Marketing Engineered For <br />
+          <span class="text-brandGold">Real Estate Velocity.</span>
+        </h1>
+
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
+          We are a full-funnel digital marketing agency dedicated to scaling Real Estate Builders, Luxury Developers, and Channel Partners. We generate genuine buyer inquiries, book verified site visits, and scale high-value property sales.
+        </p>
+
+        <!-- Feature Chips -->
+        <div class="flex flex-wrap gap-2 pt-1">
+          <button onclick="openRoadmapModal('meta')" class="px-3 py-1.5 bg-slate-50 hover:bg-brandNavy hover:text-white text-slate-700 text-xs font-semibold rounded-md border border-slate-200 transition">HNW Meta Ads</button>
+          <button onclick="openRoadmapModal('google')" class="px-3 py-1.5 bg-slate-50 hover:bg-brandNavy hover:text-white text-slate-700 text-xs font-semibold rounded-md border border-slate-200 transition">Google Search PMax</button>
+          <button onclick="openRoadmapModal('seo')" class="px-3 py-1.5 bg-slate-50 hover:bg-brandNavy hover:text-white text-slate-700 text-xs font-semibold rounded-md border border-slate-200 transition">Local Property SEO</button>
+          <button onclick="openRoadmapModal('whatsapp')" class="px-3 py-1.5 bg-slate-50 hover:bg-brandNavy hover:text-white text-slate-700 text-xs font-semibold rounded-md border border-slate-200 transition">WhatsApp Site Visit Bots</button>
+          <button onclick="openRoadmapModal('web')" class="px-3 py-1.5 bg-slate-50 hover:bg-brandNavy hover:text-white text-slate-700 text-xs font-semibold rounded-md border border-slate-200 transition">Luxury Landing Pages</button>
+        </div>
+
+        <!-- Metric Counter Strip -->
+        <div id="stats-section" class="pt-4 grid grid-cols-3 gap-4 border-t border-slate-200 max-w-lg">
+          <div>
+            <div class="font-display text-2xl sm:text-3xl font-black text-brandNavy flex items-baseline">
+              <span class="counter" data-target="2800">0</span><span>+</span>
+            </div>
+            <div class="text-[11px] text-slate-500 font-medium mt-0.5">Verified Site Visits</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl sm:text-3xl font-black text-brandGold flex items-baseline">
+              <span class="counter" data-target="6.8" data-decimals="1">0</span><span>x</span>
+            </div>
+            <div class="text-[11px] text-slate-500 font-medium mt-0.5">Average Ad ROAS</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl sm:text-3xl font-black text-brandNavy flex items-baseline">
+              <span class="counter" data-target="420">0</span><span>Cr+</span>
+            </div>
+            <div class="text-[11px] text-slate-500 font-medium mt-0.5">Inventory Sold Value</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Hero Lead Form -->
+      <div class="lg:col-span-5">
+        <div class="bg-surfaceBg rounded-2xl p-5 sm:p-7 border border-slate-200 shadow-lg relative">
+          <div class="border-b border-slate-200 pb-3 mb-4">
+            <span class="text-[10px] font-extrabold text-brandGold uppercase tracking-widest">Growth Consultation</span>
+            <h3 class="font-display text-xl sm:text-2xl font-black text-brandNavy">Claim Free Strategy Audit</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Get an in-depth digital marketing roadmap and cost-per-lead audit.</p>
+          </div>
+
+          <form onsubmit="handleAuditSubmit(event, this)" class="space-y-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+              <input type="text" name="name" required placeholder="e.g. Vikram Sharma" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Official Email *</label>
+                <input type="email" name="email" required placeholder="vikram@realty.com" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp *</label>
+                <input type="tel" name="phone" required placeholder="+91 9818114438" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Project Name & Location *</label>
+              <input type="text" name="projectLocation" required placeholder="e.g. 3BHK Luxury Floors, Dwarka Expressway" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy text-slate-800">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Monthly Marketing Budget *</label>
+              <input type="text" name="budget" required placeholder="e.g. ₹50,000 / ₹1 Lakh / ₹2.5 Lakh+" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy text-slate-800">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Primary Digital Marketing Service Needed</label>
+              <select name="service" class="w-full text-xs px-3 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy text-slate-700">
+                <option value="Real Estate Meta Ads">Meta Ads (Facebook & Instagram HNW Funnels)</option>
+                <option value="Google Ads PMax">Google Search & Performance Max Campaigns</option>
+                <option value="Real Estate SEO & GEO">Local Property SEO & Generative AI Optimization</option>
+                <option value="WhatsApp Automation">WhatsApp Site Visit Automation & CRM</option>
+                <option value="Website & Landing Pages">Luxury Project Landing Pages & UI/UX</option>
+                <option value="Full 360 Retainer">Complete 360° Real Estate Digital Retainer</option>
+              </select>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-lg bg-brandNavy hover:bg-brandGold text-white hover:text-brandNavy font-extrabold text-xs uppercase tracking-widest transition-all shadow-md mt-1">
+              Send Me My Real Estate Roadmap
+            </button>
+            <p class="text-[10px] text-center text-slate-400">100% Confidential. NDA Protected.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TRUST LOGOS ================= -->
+  <section id="clients" class="py-8 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-[11px] uppercase font-bold text-slate-400 tracking-widest mb-4">Trusted by Real Estate Category Leaders & High-Growth Brands</p>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center opacity-75">
+        <div class="p-2 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="h-5 object-contain filter grayscale hover:grayscale-0 transition">
+        </div>
+        <div class="p-2 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="h-4 object-contain filter grayscale hover:grayscale-0 transition">
+        </div>
+        <div class="p-2 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-5 object-contain filter grayscale hover:grayscale-0 transition">
+        </div>
+        <div class="p-2 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify" class="h-5 object-contain filter grayscale hover:grayscale-0 transition">
+        </div>
+        <div class="p-2 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-4 object-contain filter grayscale hover:grayscale-0 transition">
+        </div>
+        <div class="p-2 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="h-4 object-contain filter grayscale hover:grayscale-0 transition">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SPECIAL CATEGORY GEO & AEO ================= -->
+  <section id="geo-aeo" class="py-16 bg-surfaceBg border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="text-xs uppercase font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full inline-block">
+            <svg class="w-3 h-3 fill-current inline mr-1 text-emerald-600" viewBox="0 0 512 512"><path d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0s256 114.6 256 256zM256 128v128h128c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg> Special Category: Next-Gen AI Search
+          </span>
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-black text-brandNavy leading-tight">
+            Generative Engine Optimization (GEO) & Answer Engine AI
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            High-net-worth investors no longer just scroll Google. They ask <strong>ChatGPT, Perplexity, and SearchGPT</strong>: <em>"Which are the top 3 luxury residential projects on Dwarka Expressway with highest rental yield?"</em>
+          </p>
+          <div class="space-y-2.5 text-xs text-slate-700">
+            <div class="flex items-start gap-3 p-3 rounded-xl bg-white border border-slate-200 shadow-2xs">
+              <svg class="w-4 h-4 fill-current text-brandGold mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 18.2 462.4 5 484.1c-3.1 5.2 2.2 11.2 7.7 9.3c50.3-17.6 91.2-38.3 124.6-59.3C167.3 440.7 210.3 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg>
+              <div>
+                <strong class="text-brandNavy">AI Citation & Knowledge Graph:</strong> We structure your property's RERA approvals, unit configurations, and amenities so AI answer models quote your project as the #1 verified choice.
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-xl bg-white border border-slate-200 shadow-2xs">
+              <svg class="w-4 h-4 fill-current text-brandGold mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+              <div>
+                <strong class="text-brandNavy">Google SGE Snippet Domination:</strong> Optimizing schema markup for Google AI Overviews, placing your direct site visit link above all broker listings.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-brandNavyDark rounded-2xl p-5 sm:p-7 text-white border-2 border-brandGold/40 shadow-xl">
+          <div class="flex items-center justify-between pb-2.5 border-b border-white/10 mb-3 text-xs font-mono text-slate-400">
+            <span>Conversational AI Engine Simulation</span>
+            <span class="text-emerald-400 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-ping mr-1"></span> Live Recommendation</span>
+          </div>
+
+          <div class="bg-white/5 rounded-xl p-3.5 border border-white/10 mb-3 text-xs">
+            <span class="text-slate-400 block mb-0.5">User Query in ChatGPT / Perplexity:</span>
+            <p class="text-slate-200 italic">"Recommend the best gated luxury residential project in Delhi-NCR with quick airport access."</p>
+          </div>
+
+          <div class="bg-brandGold/15 rounded-xl p-3.5 border border-brandGold/40 text-xs space-y-1.5">
+            <span class="text-brandGold font-bold flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 fill-current inline" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg> AI Direct Citation:
+            </span>
+            <p class="text-slate-200 leading-relaxed">
+              "Based on verified RERA credentials, construction progress, and infrastructure proximity, <strong>[Your Real Estate Project]</strong> ranks #1. Features dedicated elevators, 80% landscaped greens, and high investor rental yields."
+            </p>
+            <div class="pt-1.5 flex justify-between items-center text-[10px] text-brandGoldLight border-t border-brandGold/20">
+              <span>Source: Global Uddan Knowledge Graph</span>
+              <span class="font-bold">Verified RERA Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 10 SERVICES & ROADMAPS ================= -->
+  <section id="services" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase font-extrabold text-brandGold tracking-widest bg-amber-50 border border-amber-200/80 px-3.5 py-1 rounded-full inline-block">
+          What We Do For You
+        </span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-black text-brandNavy mt-2">Our Core Digital Marketing Capabilities</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">Click on any service card below to reveal its exact <strong>5-Step Digital Marketing Execution Roadmap</strong> tailored for Real Estate sales.</p>
+      </div>
+
+      <!-- 10 Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Website Design & UI/UX -->
+        <div onclick="openRoadmapModal('web')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.4 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Website Design & UI/UX
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              High-converting project landing pages, luxury architectural portfolios, and sub-1.2s fast loading portals with interactive floor plans and lead forms.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 2. Search Engine Optimization (SEO) -->
+        <div onclick="openRoadmapModal('seo')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 416 512"><path d="M208 0C96.1 0 0 96.1 0 208c0 51 18.9 97.8 50.4 133.4c45.5 51.2 110.8 96.6 139.7 137.9c5.9 8.4 16.5 12.7 26.6 10.9s18.2-10 21.6-19.4c29.1-80.4 97.4-129.5 144.3-183.1C394.5 292.1 416 251.5 416 208C416 96.1 319.9 0 208 0zm0 304c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Search Engine Optimization (SEO)
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Enterprise keyword clustering, Core Web Vitals optimization, authoritative backlink networks, and AI Overviews (SGE) positioning.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 3. Social Media Optimization (SMO) -->
+        <div onclick="openRoadmapModal('smo')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512"><path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.5 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.5 0 49.4-10.2 66.6-27.1l94.1 47c-.5 3.9-.7 7.9-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.5 0-49.4 10.2-66.6 27.1l-94.1-47c.5-3.9.7-7.9.7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.5 224 352 224z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Social Media Optimization (SMO)
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Profile discovery algorithms, bio optimizations, branded hashtag clusters, and social search ranking across LinkedIn, Instagram, and YouTube.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 4. Social Media Handling -->
+        <div onclick="openRoadmapModal('social')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 640 512"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm224 32c44.2 0 80-35.8 80-80s-35.8-80-80-80s-80 35.8-80 80s35.8 80 80 80zm48 48H304.6c-24.6 13.9-53.1 22-83.6 22s-59-8.1-83.6-22H80c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm256 0h-96c14.6-13.7 24-33.3 24-55.5c0-42.5-34.5-76.5-77.5-76.5c-5.9 0-11.7 .7-17.3 2.1c25.4 20.3 41.5 51.5 41.5 86.4c0 23.3-6.9 44.9-18.8 63.5H576c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Social Media Handling
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Daily property updates, site progress carousels, architectural rendering showcases, community management, and 24/7 comment moderation.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 5. Meta Ads (Facebook & IG) -->
+        <div onclick="openRoadmapModal('meta')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.27 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61.03h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Meta Ads (Facebook & IG)
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              High-net-worth investor targeting, OTP-verified lead forms to eliminate junk numbers, and dynamic video retargeting delivering 5x+ verified ROAS.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 6. Google Ads & PPC -->
+        <div onclick="openRoadmapModal('google')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Google Ads & PPC
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Targeting active property searchers typing "3BHK luxury apartments in Dwarka Expressway" using Search ads, Performance Max (PMax), and Maps extensions.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 7. WhatsApp Marketing API -->
+        <div onclick="openRoadmapModal('whatsapp')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.6 66.4 14 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              WhatsApp Marketing API
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Official green-tick WhatsApp bot delivering instant project brochures, live sample flat location pins, and automated site visit appointment confirmations.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 8. Email Marketing & Lifecycle -->
+        <div onclick="openRoadmapModal('email')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L256 263.8 464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L268 318.8c-7.3 4-16.3 4-23.6 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Email Marketing & Lifecycle
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Drip nurturing sequences for NRI investors, construction milestone update newsletters, and price appreciation alerts that turn cold leads into site visits.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 9. Graphic Design & Branding -->
+        <div onclick="openRoadmapModal('graphics')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 512 512"><path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 65.3-70.1 61.3H416c-26.5 0-48 21.5-48 48s21.5 48 48 48h16c35.3 0 64 28.7 64 64s-28.7 64-64 64H64c-35.3 0-64-28.7-64-64s28.7-64 64-64h16c26.5 0 48-21.5 48-48s-21.5-48-48-48H61.9C25.4 384-.8 355.2 0 318.7c0-.9 0-1.8 0-2.7c0-141.4 114.6-256 256-256s256 114.6 256 256z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Graphic Design & Branding
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Luxury project brochures, site hoarding mockups, ad carousel graphics, master floor plan styling, and complete corporate identity guidelines.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+        <!-- 10. Video & Motion Ads -->
+        <div onclick="openRoadmapModal('motion')" class="service-card bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between group md:col-span-2 lg:col-span-1">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-blue-50/60 border border-slate-100 flex items-center justify-center text-brandNavy group-hover:bg-brandNavy group-hover:text-brandGold transition mb-5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512"><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM200 352V160l112 96-112 96z"/></svg>
+            </div>
+            <h3 class="font-display text-lg font-bold text-brandNavy group-hover:text-brandGold transition mb-2">
+              Video & Motion Ads
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5 font-normal">
+              Cinematic sample flat walkthrough reels, drone shoot editing, 3D architectural elevation animations, and hook-optimized Instagram Reels.
+            </p>
+          </div>
+          <div class="text-[11px] font-extrabold text-brandNavy uppercase tracking-wider flex items-center gap-1.5 group-hover:text-brandGold transition">
+            <span>LEARN ROADMAP</span>
+            <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPETITOR AUDIT COMPARISON TOOL ================= -->
+  <section id="competitor" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      
+      <span class="text-xs uppercase font-extrabold text-brandGold tracking-widest bg-amber-50 border border-amber-200/80 px-3.5 py-1 rounded-full inline-block">
+        Intelligence Spy Tool
+      </span>
+      <h2 class="font-display text-2xl sm:text-3xl font-black text-brandNavy mt-2">Competitor Real Estate Ad Audit</h2>
+      <p class="text-slate-600 text-xs sm:text-sm max-w-lg mx-auto mt-1">
+        Enter the name of any competing real estate project in your micro-market. We will reverse-engineer their active Meta ads, keywords, and lead leakages.
+      </p>
+
+      <div class="bg-surfaceBg rounded-2xl p-5 sm:p-8 border border-slate-200 shadow-xs mt-6 text-left">
+        <form id="competitor-form" onsubmit="handleCompetitorSubmit(event)" class="space-y-3.5">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Competitor Project Name / Website *</label>
+            <input type="text" id="comp-name" required placeholder="e.g. DLF Privana / Signature Global / Smart World" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy bg-white">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Your Official Email (To Receive Audit Dossier) *</label>
+              <input type="email" id="comp-email" required placeholder="yourname@realty.com" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy bg-white">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp Number (For Instant PDF Alert) *</label>
+              <input type="tel" id="comp-phone" required placeholder="+91 9818114438" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy bg-white">
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-lg bg-brandNavy hover:bg-brandGold text-white hover:text-brandNavy font-black text-xs uppercase tracking-widest transition shadow-md">
+            Unlock Competitor Intelligence Report
+          </button>
+        </form>
+
+        <div id="comp-success" class="hidden text-center py-6">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-2 text-xl">
+            <svg class="w-6 h-6 fill-current text-emerald-600 inline" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+          </div>
+          <h4 class="font-display font-black text-lg text-brandNavy">Audit Dossier Generated!</h4>
+          <p class="text-xs text-slate-600 mt-1 max-w-sm mx-auto">
+            Our data scrapers have analyzed their ad angles. The complete competitor intelligence PDF is being delivered to your WhatsApp and email within 15 minutes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BEFORE VS AFTER TRANSFORMATION ================= -->
+  <section id="comparison" class="py-16 bg-surfaceBg border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs uppercase font-extrabold text-brandGold tracking-widest">Measurable Transformation</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-black text-brandNavy mt-1">What Happens When You Fly With Us</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">See the direct shift in performance metrics after shifting to the Global Uddan real estate ecosystem.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border-2 border-rose-100 shadow-2xs relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-rose-50 text-rose-600 text-[10px] uppercase font-black px-3.5 py-1 rounded-bl-xl border-b border-l border-rose-100">
+            Typical Agency Stagnation
+          </div>
+          <h3 class="font-display text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+            <svg class="w-4 h-4 fill-current text-rose-500 inline" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg> Conventional Real Estate Marketing
+          </h3>
+          <ul class="space-y-3 text-xs text-slate-600">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-3.5 h-3.5 fill-current text-rose-500 mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+              <span><strong>Junk Unqualified Leads:</strong> Sales team wasting 80% time calling invalid numbers and curious window shoppers.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-3.5 h-3.5 fill-current text-rose-500 mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+              <span><strong>Slow Site Visit Velocity:</strong> High ad burn with less than 2% of digital leads showing up at the sample flat.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-3.5 h-3.5 fill-current text-rose-500 mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+              <span><strong>Zero SEO / Organic Moat:</strong> Depending only on 99acres and Magicbricks broker listing subscriptions.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border-2 border-brandGold shadow-xs relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-brandNavy text-brandGold text-[10px] uppercase font-black px-3.5 py-1 rounded-bl-xl">
+            The Global Uddan Orbit
+          </div>
+          <h3 class="font-display text-lg font-bold text-brandNavy mb-4 flex items-center gap-2">
+            <svg class="w-4 h-4 fill-current text-brandGold inline" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg> The Global Uddan Advantage
+          </h3>
+          <ul class="space-y-3 text-xs text-slate-700 font-medium">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-3.5 h-3.5 fill-current text-emerald-600 mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              <span><strong>Triple-Verified HNW Buyers:</strong> Meta form OTP verification filtering out non-serious inquiries.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-3.5 h-3.5 fill-current text-emerald-600 mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              <span><strong>Automated Site Visit Machine:</strong> Instant WhatsApp bot sending location maps, brochures, and taxi assistance.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-3.5 h-3.5 fill-current text-emerald-600 mt-0.5 flex-shrink-0" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+              <span><strong>Direct RERA Dominance:</strong> Permanent #1 rankings on Google Search & AI engines without broker portal fees.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEADERSHIP SQUAD ================= -->
+  <section id="team" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase font-extrabold text-brandGold tracking-widest">Brainpower & Execution</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-black text-brandNavy mt-1">Meet The Real Estate Squad</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">An elite squad of search specialists, algorithmic media buyers, and motion designers managing your growth.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-surfaceBg rounded-xl overflow-hidden border border-slate-200 hover:shadow-xs transition text-center group">
+          <div class="h-64 overflow-hidden bg-slate-100">
+            <img src="Lalu Yadav.png" alt="Lalu Yadav" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800';">
+          </div>
+          <div class="p-5">
+            <h4 class="font-display font-bold text-base text-brandNavy">Lalu Yadav</h4>
+            <p class="text-[11px] font-semibold text-brandGold uppercase tracking-wider mt-0.5">Head of SEO & Organic</p>
+            <p class="text-xs text-slate-500 mt-2">Specializing in localized property keywords, Google 3-pack, and AI GEO search rankings.</p>
+          </div>
+        </div>
+
+        <div class="bg-surfaceBg rounded-xl overflow-hidden border border-slate-200 hover:shadow-xs transition text-center group">
+          <div class="h-64 overflow-hidden bg-slate-100">
+            <img src="Rajid Ansari.jpg" alt="Rajid Ansari" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800';">
+          </div>
+          <div class="p-5">
+            <h4 class="font-display font-bold text-base text-brandNavy">Rajid Ansari</h4>
+            <p class="text-[11px] font-semibold text-brandGold uppercase tracking-wider mt-0.5">VP of Performance Media</p>
+            <p class="text-xs text-slate-500 mt-2">Managing multi-crore ad budgets delivering verified HNW buyer leads on Meta & Google Ads.</p>
+          </div>
+        </div>
+
+        <div class="bg-surfaceBg rounded-xl overflow-hidden border border-slate-200 hover:shadow-xs transition text-center group">
+          <div class="h-64 overflow-hidden bg-slate-100">
+            <img src="Basant Mehto.png" alt="Basant Mehto" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800';">
+          </div>
+          <div class="p-5">
+            <h4 class="font-display font-bold text-base text-brandNavy">Basant Mehto</h4>
+            <p class="text-[11px] font-semibold text-brandGold uppercase tracking-wider mt-0.5">Creative & Motion Lead</p>
+            <p class="text-xs text-slate-500 mt-2">Directing cinematic sample flat walkthroughs, 3D architectural renders, and luxury landing pages.</p>
+          </div>
+        </div>
+
+        <div class="bg-surfaceBg rounded-xl overflow-hidden border border-slate-200 hover:shadow-xs transition text-center group">
+          <div class="h-64 overflow-hidden bg-slate-100">
+            <img src="Anil Kumar.jpg" alt="Anil Kumar" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800';">
+          </div>
+          <div class="p-5">
+            <h4 class="font-display font-bold text-base text-brandNavy">Anil Kumar</h4>
+            <p class="text-[11px] font-semibold text-brandGold uppercase tracking-wider mt-0.5">Head of WhatsApp Systems</p>
+            <p class="text-xs text-slate-500 mt-2">Engineering automated WhatsApp site visit schedulers, location pins, and lead CRM integrations.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXACT CORPORATE OFFICE COORDINATES ================= -->
+  <section id="location" class="py-16 bg-surfaceBg border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs uppercase font-extrabold text-brandNavy bg-white px-3.5 py-1 rounded-full border border-slate-200 shadow-2xs inline-block">
+          <svg class="w-3 h-3 fill-current inline mr-1 text-brandGold" viewBox="0 0 384 512"><path d="M192 0C86 0 0 86 0 192c0 77.4 27.5 98.4 172.5 309.6c9.5 13.8 29.5 13.8 39 0C356.5 290.4 384 269.4 384 192C384 86 298 0 192 0zm0 272a80 80 0 1 1 0-160 80 80 0 1 1 0 160z"/></svg> Physical Presence & Transparency
+        </span>
+        <h2 class="font-display text-2xl sm:text-3xl font-black text-brandNavy mt-2">Visit Our Corporate Headquarters</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">Have a coffee with our growth directors. We welcome in-person marketing audits and strategy discussions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch max-w-6xl mx-auto">
+        
+        <div class="lg:col-span-7 bg-white rounded-2xl overflow-hidden border border-slate-200 min-h-[300px] shadow-xs">
+          <iframe 
+            title="Global Uddan Corporate Headquarters"
+            src="https://maps.google.com/maps?q=28.6289722,77.0047222&hl=en&z=16&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 320px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="lg:col-span-5 bg-white rounded-2xl p-6 border border-slate-200 flex flex-col justify-between shadow-xs">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 mb-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+              <span>Open for In-Person Audits (Mon – Sat: 9:30 AM – 6:30 PM)</span>
+            </div>
+
+            <h3 class="font-display text-lg font-bold text-brandNavy mb-1">Global Uddan Headquarters</h3>
+            <p class="text-xs text-slate-500 font-mono mb-3 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 fill-current text-brandGold inline" viewBox="0 0 512 512"><path d="M256 0c17.7 0 32 14.3 32 32V64H392c22.1 0 40 17.9 40 40V448c0 22.1-17.9 40-40 40H120c-22.1 0-40-17.9-40-40V104c0-22.1 17.9-40 40-40h104V32c0-17.7 14.3-32 32-32zm88 200H168c-13.3 0-24 10.7-24 24s10.7 24 24 24H344c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96H168c-13.3 0-24 10.7-24 24s10.7 24 24 24H344c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg> Coordinates: 28°37'44.3"N 77°00'17.0"E
+            </p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-5">
+              Prime Corporate Towers, Dwarka Expressway Corridor, Delhi-NCR, India.
+            </p>
+
+            <div class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-4">
+              <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-surfaceBg border border-slate-200 flex items-center justify-center text-brandNavy">
+                  <svg class="w-3.5 h-3.5 fill-current text-brandGold" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 333.4 178.6 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[10px] text-slate-400 font-semibold">DIRECT DESK</div>
+                  <a href="tel:+919818114438" class="font-bold text-slate-900 hover:text-brandGold">+91 9818114438</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-surfaceBg border border-slate-200 flex items-center justify-center text-brandNavy">
+                  <svg class="w-3.5 h-3.5 fill-current text-brandGold" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[10px] text-slate-400 font-semibold">OFFICIAL EMAIL</div>
+                  <a href="mailto:globaluddan@gmail.com" class="font-bold text-slate-900 hover:text-brandGold">globaluddan@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-surfaceBg border border-slate-200 flex items-center justify-center text-brandNavy">
+                  <svg class="w-3.5 h-3.5 fill-current text-brandGold" viewBox="0 0 512 512"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.6 2.9C246.8 1 251.4 0 256 0z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[10px] text-slate-400 font-semibold">LEGAL STATUS</div>
+                  <span class="font-bold text-slate-900">GST Registered Indian Enterprise</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-slate-100 flex gap-2">
+            <a href="https://www.google.com/maps?q=28.6289722,77.0047222" target="_blank" class="w-1/2 inline-flex items-center justify-center gap-1.5 bg-surfaceBg hover:bg-slate-100 border border-slate-200 text-brandNavy py-2.5 rounded-xl text-xs font-bold transition">
+              <svg class="w-3 h-3 fill-current inline text-brandNavy" viewBox="0 0 512 512"><path d="M352 224H305.5c-16.8 0-32.5 7.9-42.5 21.4l-31.5 42.1c-6.9 9.3-18.1 14.8-30 14.8H128c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32s32-14.3 32-32v-32c0-8.8 7.2-16 16-16h73.5c16.8 0 32.5-7.9 42.5-21.4l31.5-42.1c6.9-9.3 18.1-14.8 30-14.8H352c17.7 0 32-14.3 32-32s-14.3-32-32-32z"/></svg>
+              <span>Directions</span>
+            </a>
+            <button onclick="openCalendarModal()" class="w-1/2 inline-flex items-center justify-center gap-1.5 bg-brandNavy text-white hover:bg-brandGold hover:text-brandNavy py-2.5 rounded-xl text-xs font-bold transition">
+              <svg class="w-3 h-3 fill-current inline" viewBox="0 0 448 512"><path d="M152 64H296V24C296 10.74 306.7 0 320 0C333.3 0 344 10.74 344 24V64H384C419.3 64 448 92.65 448 128V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V128C0 92.65 28.65 64 64 64H104V24C104 10.74 114.7 0 128 0C141.3 0 152 10.74 152 24V64zM400 192H48V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V192z"/></svg>
+              <span>Book Visit</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOTTOM AUDIT SECTION ================= -->
+  <section id="audit" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="bg-surfaceBg rounded-2xl p-6 sm:p-10 border-2 border-brandGold/40 shadow-sm text-center">
+        <span class="text-xs font-extrabold text-brandGold uppercase tracking-widest">Real Estate Scale</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-black text-brandNavy mt-1">Ready to Fill Your Site Visit Pipeline?</h2>
+        <p class="text-slate-600 text-xs sm:text-sm max-w-lg mx-auto mt-1">Send us your project details and inventory targets. We will deliver a comprehensive unit economics breakdown within 4 hours.</p>
+
+        <form onsubmit="handleAuditSubmit(event, this)" class="mt-6 text-left grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
+            <input type="text" name="name" required placeholder="Your Name" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Work Email *</label>
+            <input type="email" name="email" required placeholder="name@company.com" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp Number *</label>
+            <input type="tel" name="phone" required placeholder="+91 9818114438" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+          </div>
+          
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Monthly Marketing Budget *</label>
+            <input type="text" name="budget" required placeholder="e.g. ₹50,000 / ₹1 Lakh / ₹2.5 Lakh+" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy text-slate-800">
+          </div>
+
+          <div class="sm:col-span-2">
+            <label class="block text-xs font-bold text-slate-700 mb-1">Real Estate Project Category *</label>
+            <select name="service" class="w-full text-xs px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 focus:outline-none focus:border-brandNavy">
+              <option value="Luxury Apartments">Luxury Apartments / Builder Floors</option>
+              <option value="Commercial Spaces">Commercial Retail & Office Spaces</option>
+              <option value="Township Plots">Residential / Plotted Township</option>
+              <option value="Farmhouses / Villas">Luxury Farmhouses & Holiday Villas</option>
+              <option value="Complete Real Estate Scale">360° Real Estate Launch Retainer</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 mt-1">
+            <button type="submit" class="w-full bg-brandNavy hover:bg-brandGold text-white hover:text-brandNavy font-black text-xs uppercase tracking-widest py-3.5 rounded-lg shadow-sm transition-all">
+              Request Project Strategy Deck
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brandNavyDark text-slate-400 text-xs pt-12 pb-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-5 gap-8 pb-10 border-b border-white/10">
+      
+      <div class="md:col-span-2 space-y-3 pr-6">
+        <div class="flex items-center gap-2.5">
+          <svg class="w-9 h-9 flex-shrink-0" viewBox="0 0 500 500" fill="none">
+            <circle cx="260" cy="235" r="160" stroke="#C5A059" stroke-width="14" fill="none"/>
+            <circle cx="372" cy="118" r="20" fill="#C5A059" />
+            <path d="M140 85 C230 145 285 240 320 280 C290 290 240 250 170 190 C135 155 130 115 140 85 Z" fill="#FFFFFF" />
+            <path d="M142 135 C220 185 260 250 285 285 C260 290 220 260 170 215 C145 190 138 155 142 135 Z" fill="#C5A059" />
+            <path d="M365 180 C345 185 330 195 320 210 C315 220 310 245 320 270 C290 320 230 340 185 320 C140 290 145 230 148 180 C138 230 140 310 205 348 C270 380 340 320 365 240 C370 215 385 195 410 185 C390 180 375 178 365 180 Z" fill="#FFFFFF" />
+          </svg>
+          <div>
+            <span class="font-display font-black text-lg text-white block">GLOBAL <span class="text-brandGold">UDDAN</span></span>
+            <span class="text-[8px] tracking-[0.25em] text-slate-400 font-bold uppercase block -mt-1">DIGITAL MARKETING</span>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          India's specialized performance digital marketing agency scaling project site visits, high-net-worth buyer leads, and multi-crore inventory sales for Real Estate builders and brokers.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold uppercase tracking-wider text-[11px] mb-2.5">Capabilities</h4>
+        <ul class="space-y-1.5 text-slate-400">
+          <li><a href="#geo-aeo" class="hover:text-brandGold transition">Generative AI Search (GEO)</a></li>
+          <li><a href="#competitor" class="hover:text-brandGold transition">Competitor Ad Spy Dossier</a></li>
+          <li><a href="#services" class="hover:text-brandGold transition">All 10 Core Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold uppercase tracking-wider text-[11px] mb-2.5">Direct Actions</h4>
+        <ul class="space-y-1.5 text-slate-400">
+          <li><button onclick="openCalendarModal()" class="hover:text-brandGold transition text-left">Book Strategy Call</button></li>
+          <li><a href="#audit" class="hover:text-brandGold transition">Claim Free Audit</a></li>
+          <li><a href="#comparison" class="hover:text-brandGold transition">The Uddan Advantage</a></li>
+          <li><a href="#location" class="hover:text-brandGold transition">Headquarters Map</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="text-white font-bold uppercase tracking-wider text-[11px] mb-2.5">Headquarters</h4>
+        <p class="text-slate-300"><strong class="text-brandGold">Phone:</strong> <a href="tel:+919818114438" class="hover:underline">+91 9818114438</a></p>
+        <p class="text-slate-300"><strong class="text-brandGold">Email:</strong> <a href="mailto:globaluddan@gmail.com" class="hover:underline">globaluddan@gmail.com</a></p>
+        <p class="text-slate-300"><strong class="text-brandGold">WhatsApp:</strong> <a href="https://wa.me/919818114438" target="_blank" class="text-emerald-400 hover:underline">+91 9818114438</a></p>
+        <p class="text-slate-400 text-[11px] pt-0.5 leading-relaxed">28°37'44.3"N 77°00'17.0"E, Dwarka Expressway, Delhi-NCR, India</p>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 flex flex-col sm:flex-row justify-between items-center text-slate-500 text-[11px] gap-3">
+      <div>© 2026 Global Uddan Digital Marketing. All rights reserved.</div>
+      <div class="flex space-x-5">
+        <a href="#audit" class="hover:underline">Privacy Policy</a>
+        <a href="#audit" class="hover:underline">Terms of Service</a>
+        <a href="#audit" class="hover:underline">RERA Compliance</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <aside aria-label="Quick WhatsApp Contact">
+    <a href="https://wa.me/919818114438?text=Hello%20Global%20Uddan%20Real%20Estate%20Wing,%20I%20want%20to%20scale%20my%20property%20sales" 
+       target="_blank" 
+       rel="noopener"
+       class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white w-13 h-13 p-3.5 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform whatsapp-pulse"
+       title="Chat with Real Estate Growth Director on WhatsApp">
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.6 66.4 14 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+  </aside>
+
+  <!-- ================= 5-STEP ROADMAP POPUP MODAL ================= -->
+  <div id="roadmap-modal" class="fixed inset-0 z-50 bg-brandNavyDark/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-4xl w-full p-6 sm:p-7 border-2 border-brandGold shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      
+      <button onclick="closeRoadmapModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-xl w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+        ✕
+      </button>
+
+      <div class="border-b border-slate-100 pb-3 mb-5 pr-8">
+        <span class="text-[10px] font-black uppercase tracking-widest text-brandGold bg-brandGold/10 px-3 py-1 rounded-full inline-block mb-1.5">
+          Global Uddan Real Estate Execution Blueprint
+        </span>
+        <h3 id="modal-service-title" class="font-display text-xl sm:text-2xl font-black text-brandNavy"></h3>
+        <p id="modal-service-desc" class="text-xs text-slate-500 mt-0.5"></p>
+      </div>
+
+      <div id="modal-steps-grid" class="grid grid-cols-1 md:grid-cols-5 gap-3 mb-5"></div>
+
+      <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <span class="text-xs text-slate-500 text-center sm:text-left">
+          Ready to launch this roadmap for your property project?
+        </span>
+        <div class="flex gap-2 w-full sm:w-auto">
+          <button onclick="closeRoadmapModal()" class="w-1/2 sm:w-auto px-4 py-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-600 hover:bg-slate-50">
+            Close
+          </button>
+          <a href="#audit" onclick="closeRoadmapModal()" class="w-1/2 sm:w-auto px-5 py-2 rounded-lg bg-brandNavy hover:bg-brandGold text-white hover:text-brandNavy text-xs font-bold uppercase tracking-wider transition text-center">
+            Claim Free Audit &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= LIVE CALENDAR BOOKING MODAL ================= -->
+  <div id="calendar-modal" class="fixed inset-0 z-50 bg-brandNavyDark/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-5 sm:p-7 border-2 border-brandGold shadow-2xl relative">
+      <button onclick="closeCalendarModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-xl w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+        ✕
+      </button>
+
+      <div class="text-center mb-5">
+        <span class="text-[10px] font-black uppercase tracking-widest text-brandGold bg-brandGold/10 px-3 py-1 rounded-full inline-block">
+          1-on-1 Strategy Session
+        </span>
+        <h3 class="font-display text-xl sm:text-2xl font-black text-brandNavy mt-1.5">Book a 15-Min Project Call</h3>
+        <p class="text-xs text-slate-500 mt-0.5">Discuss your inventory sales and site visit targets live with our Performance Director.</p>
+      </div>
+
+      <form onsubmit="handleCalendarSubmit(event)" class="space-y-3 text-left">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+          <input type="text" id="cal-name" required placeholder="e.g. Vikram Singhania" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp Number *</label>
+            <input type="tel" id="cal-phone" required placeholder="+91 9818114438" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Preferred Time *</label>
+            <select id="cal-time" class="w-full text-xs px-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy bg-white">
+              <option>Today: 4:00 PM</option>
+              <option>Today: 6:00 PM</option>
+              <option>Tomorrow: 11:30 AM</option>
+              <option>Tomorrow: 3:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Project Name & Location *</label>
+          <input type="text" id="cal-project" required placeholder="e.g. 4BHK Luxury Gurgaon" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brandNavy">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-lg bg-brandNavy hover:bg-brandGold text-white hover:text-brandNavy font-black text-xs uppercase tracking-widest transition shadow-md mt-1">
+          Confirm Strategy Call Slot
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT LOGIC ================= -->
+  <script>
+    const FIREBASE_LEADS_URL = "https://global-uddan-leads-default-rtdb.firebaseio.com/leads.json";
+
+    // Roadmaps database
+    const roadmapDatabase = {
+      web: {
+        title: "Website Design & UI/UX Roadmap (Real Estate)",
+        subtitle: "How we build sub-1.2s loading luxury property landing pages with 4x higher lead-to-visit rates.",
+        steps: [
+          { num: "01", title: "Project UX & Wireframing", desc: "Competitor positioning analysis, unit layout mapping, and lead capture wireframe design." },
+          { num: "02", title: "Luxury Aesthetic UI Design", desc: "Figma interactive prototypes, gold-navy palette, interactive 3D floor plans, and mobile screens." },
+          { num: "03", title: "Full-Stack Development", desc: "Custom code / WordPress / Webflow architecture with instant WhatsApp popups and verified forms." },
+          { num: "04", title: "Speed & Vitals Tuning", desc: "Optimizing high-res property images hitting 95+ PageSpeed score and schema markup for instant loading." },
+          { num: "05", title: "Deployment & Heatmaps", desc: "Domain launch, Google Analytics 4 tracking, and post-launch heatmaps to boost brochure downloads." }
+        ]
+      },
+      seo: {
+        title: "Search Engine Optimization (SEO) Roadmap",
+        subtitle: "Engineered to rank your real estate project #1 for high-intent property buyer queries.",
+        steps: [
+          { num: "01", title: "Micro-Market Keyword Audit", desc: "Targeting 200+ high-value keywords like 'luxury 3BHK flats in [Location]' and buyer queries." },
+          { num: "02", title: "On-Page Architecture Fix", desc: "Optimizing RERA details, location tags, H1-H3 headers, and internal linking for locality dominance." },
+          { num: "03", title: "Google 3-Pack & Local SEO", desc: "Optimizing Google Business Profile for physical site office with reviews and direction requests." },
+          { num: "04", title: "Authority PR Backlinks", desc: "Publishing project press releases on premium real estate and national news publication portals." },
+          { num: "05", title: "Direct RERA Organic Moat", desc: "Capturing top 3 search positions permanently, eliminating dependency on portal subscription fees." }
+        ]
+      },
+      smo: {
+        title: "Social Media Optimization (SMO) Roadmap",
+        subtitle: "Hacking social algorithms to maximize organic property discovery across Instagram and LinkedIn.",
+        steps: [
+          { num: "01", title: "Profile SEO & Bio Calibration", desc: "Injecting primary locality keywords and RERA credentials into Instagram/LinkedIn handles." },
+          { num: "02", title: "Location Hashtag Silos", desc: "Curating high-volume luxury real estate hashtags for guaranteed Explore page visibility." },
+          { num: "03", title: "Audio & Trend Arbitrage", desc: "Pairing drone property walkthrough clips with viral audio to maximize organic reach." },
+          { num: "04", title: "Multi-Channel Distribution", desc: "Cross-syndicating walkthrough shorts across YouTube Shorts, LinkedIn, Facebook, and Instagram." },
+          { num: "05", title: "Direct WhatsApp Funneling", desc: "Funneling profile visitors directly into WhatsApp automated brochure downloads and site visit bookings." }
+        ]
+      },
+      social: {
+        title: "Social Media Handling Roadmap",
+        subtitle: "Transforming your real estate feeds into an authoritative luxury brand presence.",
+        steps: [
+          { num: "01", title: "Aesthetic Brand Guidelines", desc: "Establishing prestige visual grid guidelines, architectural palettes, and font pairings." },
+          { num: "02", title: "Monthly Editorial Calendar", desc: "Planning 30 days of construction updates, sample flat highlights, and locality review reels." },
+          { num: "03", title: "Daily Publishing & Stories", desc: "Consistent posting at peak investor hours coupled with daily interactive Instagram story polls." },
+          { num: "04", title: "Investor Engagement", desc: "Responding to direct messages, answering price queries, and booking sample flat visits." },
+          { num: "05", title: "Monthly Growth Audit", desc: "Delivering detailed reports on follower demographics, reel impressions, and direct buyer inquiries." }
+        ]
+      },
+      meta: {
+        title: "Meta Ads (Facebook & Instagram) Roadmap",
+        subtitle: "Full-funnel algorithmic media buying targeting high-net-worth property investors.",
+        steps: [
+          { num: "01", title: "Pixel & CAPI Tracking Setup", desc: "Configuring Meta Conversions API (CAPI) and custom domain verification to prevent data leakage." },
+          { num: "02", title: "Creative Hook Sprint", desc: "Developing 8-12 video hooks (Sample flat walkthroughs, price reveal teasers, and founder tours)." },
+          { num: "03", title: "OTP-Verified Lead Forms", desc: "Deploying Meta instant forms with mandatory OTP confirmation to eliminate 100% of fake numbers." },
+          { num: "04", title: "Advantage+ Bid Scaling", desc: "Scaling high-performing ad sets targeting business owners and luxury buyers with strict CPA caps." },
+          { num: "05", title: "Dynamic Video Retargeting", desc: "Re-engaging visitors who watched 50%+ of the walkthrough reel with exclusive payment plan offers." }
+        ]
+      },
+      google: {
+        title: "Google Ads & PPC Roadmap",
+        subtitle: "Capturing ready-to-buy property searchers actively looking for inventory in your sector.",
+        steps: [
+          { num: "01", title: "Negative Keyword Fortress", desc: "Blocking irrelevant clicks (e.g. 'for rent', 'jobs', 'broker complaints') to protect ad spend." },
+          { num: "02", title: "High-CTR Search Copy", desc: "Writing emotional copy, location highlights, starting prices, and sitelinks for maximum Quality Score." },
+          { num: "03", title: "Performance Max (PMax) Launch", desc: "Deploying high-converting asset groups across YouTube, Search, Gmail, Maps, and Display." },
+          { num: "04", title: "Target ROAS Bid Tuning", desc: "Transitioning bidding to Target CPA (tCPA) to maximize qualified phone inquiries and form submissions." },
+          { num: "05", title: "Location Radius Pruning", desc: "Optimizing radius bids to target top corporate hubs, airport zones, and affluent residential areas." }
+        ]
+      },
+      whatsapp: {
+        title: "WhatsApp Marketing API Roadmap",
+        subtitle: "Automated conversational engines that convert online ad leads into physical site visits.",
+        steps: [
+          { num: "01", title: "Official Green Tick API", desc: "Meta business verification, Official WhatsApp Business API setup, and dedicated number onboarding." },
+          { num: "02", title: "Instant Brochure Bot", desc: "Triggering automated project PDF brochure and sample flat video within 3 seconds of ad submission." },
+          { num: "03", title: "Site Visit Scheduler Flow", desc: "Interactive bot allowing buyers to choose their preferred date, time, and taxi pickup assistance." },
+          { num: "04", title: "CRM Webhook Integration", desc: "Pushing verified lead chats directly into your sales team's CRM with instant WhatsApp alerts." },
+          { num: "05", title: "Automated Nurture Drips", desc: "Automated sequence sending price hike warnings, construction progress videos, and festival offers." }
+        ]
+      },
+      email: {
+        title: "Email Marketing & Lifecycle Roadmap",
+        subtitle: "High-ticket investor journeys designed to nurture long-cycle real estate buyers.",
+        steps: [
+          { num: "01", title: "Deliverability Protocols", desc: "Configuring DKIM, SPF, and DMARC to guarantee 99% inbox placement without spam drops." },
+          { num: "02", title: "NRI Investor Drip Series", desc: "7-stage automated sequence highlighting rental yields, RERA approvals, and capital growth." },
+          { num: "03", title: "List Segmentation", desc: "Dividing your database by budget tiers (₹80L-₹1.5Cr vs ₹3Cr+) to send personalized unit layouts." },
+          { num: "04", title: "Monthly Progress Newsletters", desc: "Curating drone site progress updates and locality infrastructure developments." },
+          { num: "05", title: "Re-Engagement Campaigns", desc: "Sending exclusive launch pricing previews to cold databases to reactivate inactive leads." }
+        ]
+      },
+      graphics: {
+        title: "Graphic Design & Branding Roadmap",
+        subtitle: "Prestige visual design that elevates project credibility and commands higher pricing.",
+        steps: [
+          { num: "01", title: "Brand Identity Discovery", desc: "Defining the luxury tone, color palette moodboards, and architectural typography hierarchy." },
+          { num: "02", title: "Project Brochure & Floor Plans", desc: "Designing 28-page digital and print brochures with 2D/3D styled master site plans." },
+          { num: "03", title: "Performance Ad Creatives", desc: "Designing static and carousel ad assets highlighting payment schemes and project amenities." },
+          { num: "04", title: "Site Hoardings & Outdoor Signage", desc: "Designing high-visibility expressway site hoardings, directional boards, and flags." },
+          { num: "05", title: "Digital Brand Asset Kit", desc: "Delivering organized vector assets (PDF, SVG, AI) for marketing collaterals and sales kits." }
+        ]
+      },
+      motion: {
+        title: "Video & Motion Ads Roadmap",
+        subtitle: "Cinematic short-form reels and commercial drone edits designed to stop thumbs and drive visits.",
+        steps: [
+          { num: "01", title: "Scripting & 3-Sec Hooks", desc: "Writing 5 high-converting video hooks for each concept (e.g. 'Inside the most luxurious 4BHK...')." },
+          { num: "02", title: "Dynamic Storyboarding", desc: "Planning fast cuts, kinetic text overlays, ambient sound effects, and sample flat walkthrough flow." },
+          { num: "03", title: "High-End Video Editing", desc: "Color grading 4K footage, adding dynamic text typography, and highlighting master suites." },
+          { num: "04", title: "Multi-Format Exports", desc: "Exporting optimized 9:16 (Instagram Reels/Stories) and 16:9 (YouTube) versions." },
+          { num: "05", title: "Performance A/B Testing", desc: "Testing multiple video hook intros on live Meta campaigns to lower cost per site visit." }
+        ]
+      }
+    };
+
+    function openRoadmapModal(serviceKey) {
+      const data = roadmapDatabase[serviceKey] || roadmapDatabase.web;
+      document.getElementById('modal-service-title').innerText = data.title;
+      document.getElementById('modal-service-desc').innerText = data.subtitle;
+
+      const grid = document.getElementById('modal-steps-grid');
+      grid.innerHTML = data.steps.map((step, idx) => `
+        <div class="bg-surfaceBg rounded-xl p-3.5 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="font-display text-lg font-black text-brandGold mb-1">${step.num}</div>
+            <h4 class="font-display font-bold text-xs text-brandNavy mb-1 leading-snug">${step.title}</h4>
+            <p class="text-[10.5px] text-slate-500 leading-relaxed">${step.desc}</p>
+          </div>
+          <div class="mt-2.5 pt-1.5 border-t border-slate-200 text-[9px] font-bold text-slate-400 uppercase tracking-wider flex justify-between items-center">
+            <span>Step ${idx + 1}</span>
+            ✓
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('roadmap-modal').classList.remove('hidden');
+    }
+
+    function closeRoadmapModal() {
+      document.getElementById('roadmap-modal').classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeRoadmapModal();
+        closeCalendarModal();
+      }
+    });
+
+    // Calendar & Competitor Modals / Forms -> Firebase
+    function openCalendarModal() {
+      document.getElementById('calendar-modal').classList.remove('hidden');
+    }
+    function closeCalendarModal() {
+      document.getElementById('calendar-modal').classList.add('hidden');
+    }
+
+    async function handleCalendarSubmit(e) {
+      e.preventDefault();
+      const payload = {
+        fullName: document.getElementById('cal-name').value.trim(),
+        phone: document.getElementById('cal-phone').value.trim(),
+        preferredSlot: document.getElementById('cal-time').value,
+        projectDetails: document.getElementById('cal-project').value.trim(),
+        source: "15-Min Calendar Booking Modal",
+        submittedAt: new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+        timestamp: Date.now()
+      };
+
+      try {
+        const res = await fetch(FIREBASE_LEADS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error("Failed");
+        alert(`Slot Confirmed for ${payload.preferredSlot}! Our Director will WhatsApp you Google Meet link.`);
+        closeCalendarModal();
+      } catch (err) {
+        alert("Booking failed. Please direct message us on WhatsApp: +91 9818114438");
+      }
+    }
+
+    async function handleCompetitorSubmit(e) {
+      e.preventDefault();
+      const payload = {
+        competitorProject: document.getElementById('comp-name').value.trim(),
+        email: document.getElementById('comp-email').value.trim(),
+        phone: document.getElementById('comp-phone').value.trim(),
+        source: "Competitor Intelligence Tool",
+        submittedAt: new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+        timestamp: Date.now()
+      };
+
+      try {
+        const res = await fetch(FIREBASE_LEADS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error("Failed");
+        document.getElementById('competitor-form').classList.add('hidden');
+        document.getElementById('comp-success').classList.remove('hidden');
+      } catch (err) {
+        alert("Network error. Please try again or WhatsApp us at +91 9818114438");
+      }
+    }
+
+    async function handleAuditSubmit(event, formElement) {
+      event.preventDefault();
+      const submitBtn = formElement.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Submitting...';
+
+      const formData = {
+        fullName: formElement.querySelector('[name="name"]').value.trim(),
+        email: formElement.querySelector('[name="email"]').value.trim(),
+        phone: formElement.querySelector('[name="phone"]').value.trim(),
+        budget: formElement.querySelector('[name="budget"]').value.trim(),
+        service: formElement.querySelector('[name="service"]').value,
+        projectLocation: formElement.querySelector('[name="projectLocation"]') ? formElement.querySelector('[name="projectLocation"]').value.trim() : "Not specified",
+        source: "Real Estate Growth Form",
+        submittedAt: new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+        timestamp: Date.now()
+      };
+
+      try {
+        const response = await fetch(FIREBASE_LEADS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData)
+        });
+        if (!response.ok) throw new Error("Failed");
+
+        formElement.innerHTML = `
+          <div class="text-center py-6 px-4 bg-emerald-50 rounded-xl border border-emerald-200">
+            <div class="w-10 h-10 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto mb-2.5 shadow-2xs">
+              ✓
+            </div>
+            <h4 class="text-base font-black text-slate-900">Project Blueprint Request Received!</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Thank you, <strong class="text-slate-900">${formData.fullName}</strong>. Our Real Estate Growth Director will review your project and connect with you at <strong class="text-slate-900">${formData.phone}</strong> within 4 hours.
+            </p>
+          </div>
+        `;
+      } catch (error) {
+        alert("Submission failed. Please message directly on WhatsApp: +91 9818114438");
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      }
+    }
+
+    // Number Counter Animation
+    let counterStarted = false;
+    const statsSection = document.getElementById('stats-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !counterStarted) {
+          counterStarted = true;
+          document.querySelectorAll('.counter').forEach(counter => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            const isDecimal = counter.getAttribute('data-decimals') === '1';
+            const duration = 1600;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const currentVal = progress * target;
+              counter.innerText = isDecimal ? currentVal.toFixed(1) : Math.floor(currentVal);
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.innerText = isDecimal ? target.toFixed(1) : target;
+              }
+            }
+            requestAnimationFrame(updateCounter);
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (statsSection) observer.observe(statsSection);
+  </script>
+</body>
+</html>
